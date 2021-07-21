@@ -14,6 +14,7 @@ RUN apt update -y \
         wget \
         nano \
         unzip \
+        sudo \
     && apt-get clean autoclean \
     && apt-get autoremove -y \
     && rm -rf /var/lib/apt/lists/*
