@@ -29,4 +29,4 @@ then
     chown tm2:tm2 /srv/RunSrvTM.sh
 fi
 
-./srv/RunSrvTM.sh
+/bin/su -s /bin/bash -c '/srv/RunSrvTM.sh' tm2
