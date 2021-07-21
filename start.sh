@@ -5,7 +5,8 @@
 
 if [ ! -f /srv/ManiaPlanetBetaServer_2015-06-16.zip ]
 then
-    wget "http://files.maniaplanet.com/ManiaPlanet3Beta/ManiaPlanetBetaServer_2015-06-16.zip" -O /srv/ManiaPlanetBetaServer_2015-06-16.zip
+    wget "http://192.168.10.4/ManiaPlanetBetaServer_2015-06-16.zip" -O /srv/ManiaPlanetBetaServer_2015-06-16.zip
+    #wget "http://files.maniaplanet.com/ManiaPlanet3Beta/ManiaPlanetBetaServer_2015-06-16.zip" -O /srv/ManiaPlanetBetaServer_2015-06-16.zip
 fi
 
 if [ -f /srv/ManiaPlanetBetaServer_2015-06-16.zip ]
