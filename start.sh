@@ -14,4 +14,4 @@ then
 fi
 
 
-cd /srv/ && RunSrvTM.sh
+cd /srv/ && ./RunSrvTM.sh
