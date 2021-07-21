@@ -13,10 +13,10 @@ then
     unzip /srv/ManiaPlanetBetaServer_2015-06-16.zip -d /srv/
 fi
 
-if [ ! -f /srv/UserData/Config/dedicated_cfg.default.txt ]
-then
-    cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg 
-fi
+# if [ ! -f /srv/UserData/Config/dedicated_cfg.default.txt ]
+# then
+#     cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg 
+# fi
 
 if [ ! -f /srv/RunSrvTM.sh ]
 then
@@ -38,5 +38,5 @@ fi
 
 #usermod -aG sudo tm2
 #sudo -u tm2 /srv/RunSrvTM.sh
-
+cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg
 ./srv/RunSrvTM.sh
