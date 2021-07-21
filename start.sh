@@ -18,4 +18,8 @@ then
     echo "./ManiaPlanetServer /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt" > /srv/RunSrvTM.sh
 fi
 
+# Set Permissions
+chmod +x /srv/RunSrvTM.sh \
+chown tm2:tm2 /srv/RunSrvTM.sh
+
 ./srv/RunSrvTM.sh
