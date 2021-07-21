@@ -8,10 +8,14 @@ then
     wget "http://files.maniaplanet.com/ManiaPlanet3Beta/ManiaPlanetBetaServer_2015-06-16.zip" -O /srv/ManiaPlanetBetaServer_2015-06-16.zip
 fi
 
+if
+then  [ ! -f /srv/ManiaPlanetBetaServer_2015-06-16.zip ]
+    unzip ManiaPlanetBetaServer_2015-06-16.zip -d /srv/
+fi
+
 if [ ! -f /srv/RunSrvTM.sh ]
 then
     echo "./ManiaPlanetServer /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt" > /srv/RunSrvTM.sh
 fi
 
-
-cd /srv/ && ./RunSrvTM.sh
+./srv/RunSrvTM.sh

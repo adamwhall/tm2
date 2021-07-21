@@ -13,6 +13,7 @@ RUN apt update -y \
     && apt install -y \
         wget \
         nano \
+        unzip \
     && apt-get clean autoclean \
     && apt-get autoremove -y \
     && rm -rf /var/lib/apt/lists/*
@@ -28,10 +29,10 @@ RUN mkdir -p /srv \
     && chown -R tm2:tm2 /srv
 RUN chmod +x /start.sh \
     && chown tm2:tm2 /start.sh
-RUN chmod +x /RunSrvTM.sh \
-    && chown tm2:tm2 /srv/tm2/RunSrvTM.sh
-RUN chmod +x /RunSrvSM.sh \
-    && chown tm2:tm2 /srv/tm2/RunSrvSM.sh
+RUN chmod +x /srv/RunSrvTM.sh \
+    && chown tm2:tm2 /tm2/RunSrvTM.sh
+RUN chmod +x /srv/RunSrvSM.sh \
+    && chown tm2:tm2 /tm2/RunSrvSM.sh
 
 # Expose a volume so that TM2 server data is persistent
 VOLUME /srv
