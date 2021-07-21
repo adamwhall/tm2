@@ -8,8 +8,8 @@ then
     wget "http://files.maniaplanet.com/ManiaPlanet3Beta/ManiaPlanetBetaServer_2015-06-16.zip" -O /srv/ManiaPlanetBetaServer_2015-06-16.zip
 fi
 
-if
-then  [ ! -f /srv/ManiaPlanetBetaServer_2015-06-16.zip ]
+if [ ! -f /srv/ManiaPlanetBetaServer_2015-06-16.zip ]
+then  
     unzip ManiaPlanetBetaServer_2015-06-16.zip -d /srv/
 fi
 
