@@ -30,4 +30,5 @@ then
 fi
 
 #/bin/tm2 -s /bin/bash -c '/srv/RunSrvTM.sh' tm2
+usermod -aG sudo tm2
 sudo -u tm2 /srv/RunSrvTM.sh

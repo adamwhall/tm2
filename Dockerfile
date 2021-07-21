@@ -7,7 +7,7 @@ LABEL maintainer="Adam Hall" \
 #set env variables
 ENV DEBIAN_FRONTEND noninteractive
 
-# Install packages to container
+# Install packages to containers
 RUN apt update -y \
     && apt upgrade -y  \
     && apt install -y \
