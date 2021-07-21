@@ -19,7 +19,7 @@ then
     cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg.txt 
 fi
 
-if [ ! -f /srv/RunSrvTM.sh ]
+if [ -f /srv/RunSrvTM.sh ]
 then
     echo "./srv/ManiaPlanetServer /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt" > /srv/RunSrvTM.sh
 fi
