@@ -16,19 +16,12 @@ fi
 
 if [ -f /srv/UserData/Config/dedicated_cfg.default.txt ]
 then
-    cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg 
+    cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg.txt 
 fi
-
-# cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg
 
 if [ ! -f /srv/RunSrvTM.sh ]
 then
     echo "./ManiaPlanetServer /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt" > /srv/RunSrvTM.sh
 fi
-
-#/bin/tm2 -s /bin/bash -c '/srv/RunSrvTM.sh' tm2
-
-#usermod -aG sudo tm2
-#sudo -u tm2 /srv/RunSrvTM.sh
 
 ./srv/RunSrvTM.sh
