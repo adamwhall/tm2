@@ -38,5 +38,5 @@ fi
 
 #usermod -aG sudo tm2
 #sudo -u tm2 /srv/RunSrvTM.sh
-sudo cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg
+cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg
 ./srv/RunSrvTM.sh
