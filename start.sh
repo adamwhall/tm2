@@ -19,7 +19,14 @@ then
 fi
 
 # Set Permissions
-chmod +x /srv/RunSrvTM.sh \
-chown tm2:tm2 /srv/RunSrvTM.sh
+if [ ! -f /srv/RunSrvTM.sh ]
+then
+    chmod +x /srv/RunSrvTM.sh
+fi
+
+if [ ! -f /srv/RunSrvTM.sh ]
+then
+    chown tm2:tm2 /srv/RunSrvTM.sh
+fi
 
 ./srv/RunSrvTM.sh
