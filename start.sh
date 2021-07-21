@@ -21,7 +21,7 @@ fi
 
 if [ ! -f /srv/RunSrvTM.sh ]
 then
-    echo "./ManiaPlanetServer /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt" > /srv/RunSrvTM.sh
+    echo "./srv/ManiaPlanetServer /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt" > /srv/RunSrvTM.sh
 fi
 
 ./srv/RunSrvTM.sh
