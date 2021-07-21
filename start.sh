@@ -11,7 +11,7 @@ fi
 
 if [ -f /srv/ManiaPlanetBetaServer_2015-06-16.zip ]
 then  
-   sudo unzip /srv/ManiaPlanetBetaServer_2015-06-16.zip -d /srv/
+   unzip /srv/ManiaPlanetBetaServer_2015-06-16.zip -d /srv/
 fi
 
 # if [ ! -f /srv/UserData/Config/dedicated_cfg.default.txt ]
