@@ -16,7 +16,7 @@ fi
 
 if [ -f /srv/UserData/Config/dedicated_cfg.default.txt ]
 then
-    cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg.txt 
+    cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg 
 fi
 
 if [ -f /srv/RunSrvTM.sh ]
