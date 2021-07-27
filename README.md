@@ -1,4 +1,4 @@
-# tm2 TEST
+# tm2 TESTINF
 TrackMania 2 Docker Container
 Version 1
 

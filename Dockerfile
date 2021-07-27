@@ -1,4 +1,4 @@
-#THIS IS TEST
+#THIS IS TESTING
 FROM ubuntu:20.04
 
 LABEL maintainer="Adam Hall" \

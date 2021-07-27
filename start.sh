@@ -26,4 +26,4 @@ then
     echo "./ManiaPlanetServer /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt" > /srv/RunSrvTM.sh
 fi
 
-#./srv/RunSrvTM.sh
+./srv/RunSrvTM.sh
