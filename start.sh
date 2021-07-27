@@ -1,6 +1,7 @@
 #!/bin/bash
 # -----------------------------------------------------------------------------
-# TM2 /start.sh scripts
+# TM2 /start.sh script
+# tm2:latest
 # -----------------------------------------------------------------------------
 
 if [ ! -f /tm2srv/ManiaPlanetBetaServer_2015-06-16.zip ]
@@ -23,7 +24,7 @@ if [ -f /tm2srv/RunSrvTM.sh ]
 then
     # echo "./tm2srv/ManiaPlanetServer /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt" > /tm2srv/RunSrvTM.sh
     # echo "./tm2srv/ManiaPlanetServer /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt /title=TMStadium" > /tm2srv/RunSrvTM.sh
-    echo "./ManiaPlanetServer /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt" > /tm2srv/RunSrvTM.sh
+    echo "./tm2srv/ManiaPlanetServer /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt" > /tm2srv/RunSrvTM.sh
 fi
 
 cd /tm2srv/
