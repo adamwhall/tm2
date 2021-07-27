@@ -16,14 +16,14 @@ fi
 
 if [ -f /srv/UserData/Config/dedicated_cfg.default.txt ]
 then
-    echo cp "/srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg.txt"
+    cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg.txt
 fi
 
 if [ -f /srv/RunSrvTM.sh ]
 then
     # echo "./srv/ManiaPlanetServer /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt" > /srv/RunSrvTM.sh
     # echo "./srv/ManiaPlanetServer /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt /title=TMStadium" > /srv/RunSrvTM.sh
-    echo "./srv/ManiaPlanetServer /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt" > /srv/RunSrvTM.sh
+    echo "./ManiaPlanetServer /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt" > /srv/RunSrvTM.sh
 fi
 
-./srv/RunSrvTM.sh
+#./srv/RunSrvTM.sh

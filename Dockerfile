@@ -5,7 +5,7 @@ LABEL maintainer="Adam Hall" \
       name="TrackMania 2 Server" \
       version="1.0"
 
-#set env variables
+#set env variable
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install packages to containers
