@@ -1,5 +1,5 @@
 #THIS IS TESTING
-FROM ubuntu:20.04
+FROM debian:latest
 
 LABEL maintainer="Adam Hall" \
       name="TrackMania 2 Server" \
@@ -21,14 +21,14 @@ RUN apt update -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Add dedicated TM2 user
-RUN useradd -m -d /srv tm2
+RUN useradd -m -d /tm2srv tm2
 
 # Add Entrypoint script
 ADD start.sh /start.sh
 
 # Create needed data dir and set the dedicated TM2 user as owner
-RUN mkdir -p /srv \
-    && chown -R tm2:tm2 /srv
+RUN mkdir -p /tm2srv \
+    && chown -R tm2:tm2 /tm2srv
 RUN chmod +x /start.sh \
     && chown tm2:tm2 /start.sh
 
