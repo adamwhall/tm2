@@ -30,7 +30,7 @@ ADD start.sh /start.sh
 RUN mkdir -p /srv \
     && chown -R tm2:tm2 /srv
 RUN chmod +x /start.sh \
-    && chown tm2:tm2 /start.sh
+    && chown tm2:tm2 /srv/start.sh
 
 # Expose a volume so that TM2 server data is persistent
 VOLUME /srv
