@@ -29,8 +29,8 @@ ADD start.sh /start.sh
 # Create needed data dir and set the dedicated TM2 user as owner
 RUN mkdir -p /srv \
     && chown -R tm2:tm2 /srv
-RUN chmod +x /srv/start.sh \
-    && chown tm2:tm2 /srv/start.sh
+RUN chmod +x /start.sh \
+    && chown tm2:tm2 /start.sh
 
 # Expose a volume so that TM2 server data is persistent
 VOLUME /srv
