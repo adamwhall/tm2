@@ -23,7 +23,7 @@ if [ -f /srv/RunSrvTM.sh ]
 then
     # echo "./srv/ManiaPlanetServer /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt" > /srv/RunSrvTM.sh
     # echo "./srv/ManiaPlanetServer /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt /title=TMStadium" > /srv/RunSrvTM.sh
-    echo "ManiaPlanetServer.exe /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt " > /srv/RunSrvTM.sh
+    echo "./srv/ManiaPlanetServer /title=TMStadium /game_settings=MatchSettings/TMStadiumB.txt /dedicated_cfg=dedicated_cfg.txt " > /srv/RunSrvTM.sh
 fi
 
 ./srv/RunSrvTM.sh
