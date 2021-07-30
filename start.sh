@@ -4,26 +4,31 @@
 # tm2:latest v2
 # -----------------------------------------------------------------------------
 
-if [ ! -f /tm2/ManiaplanetServer_Latest.zip ]
+if [ ! -f /srv/ManiaplanetServer_Latest.zip ]
 then
-    wget "http://files.v04.maniaplanet.com/server/ManiaplanetServer_Latest.zip" -O /tm2/ManiaplanetServer_Latest.zip
+    wget "http://files.v04.maniaplanet.com/server/ManiaplanetServer_Latest.zip" -O /srv/ManiaplanetServer_Latest.zip
 fi
 
-if [ -f /tm2/ManiaplanetServer_Latest.zip ]
+if [ -f /srv/ManiaplanetServer_Latest.zip ]
 then  
-   unzip /tm2/ManiaplanetServer_Latest.zip -d /tm2/
+   unzip /srv/ManiaplanetServer_Latest.zip -d /srv/
 fi
 
-./tm2/ManiaPlanetServer
+./srv/ManiaPlanetServer
 
-if [ -f /tm2/UserData/Config/dedicated_cfg.default.txt ]
+if [ ! -f /srv/ManiaplanetServer_Latest.zip ]
 then
-    cp /tm2srv/UserData/Config/dedicated_cfg.default.txt /tm2/UserData/Config/dedicated_cfg.txt
+    wget "https://v4.live.maniaplanet.com/ingame/public/titles/download/TMStadium@nadeo.Title.Pack.gbx" -O /srv/UserData/Packs/TMStadium@nadeo.Title.Pack.gbx
 fi
 
-if [ -f /tm2/RunSrvTM.sh ]
+if [ ! -f /srv/UserData/Config/dedicated_cfg.txt ]
+then
+    cp /tm2srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg.txt
+fi
+
+if [ -f /srv/RunSrvTM.sh ]
 then
     echo "./ManiaPlanetServer /nodaemon /dedicated_cfg=dedicated_cfg.txt /title=TMStadium@nadeo /game_settings=MatchSettings/TMStadiumA.txt" > /RunSrvTM.sh
 fi
 
-./tm2/RunSrvTM.sh
+./srv/RunSrvTM.sh

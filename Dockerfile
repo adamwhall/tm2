@@ -1,7 +1,7 @@
-#THIS IS TESTING V2.1
+#THIS IS TESTING V2.1d
 FROM debian:latest
 
-LABEL maintainer="Adam Hall" \
+LABEL maintainer="AdamWHall" \
       name="TrackMania 2 Server" \
       version="1.0"
 
@@ -21,14 +21,14 @@ RUN apt update -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Add dedicated TM2 user
-RUN useradd -m -d /tm2 tm2
+RUN useradd -m -d /srv tm2
 
 # Add Entrypoint script
 ADD start.sh /start.sh
 
 # Create needed data dir and set the dedicated TM2 user as owner
-RUN mkdir -p /tm2 \
-    && chown -R tm2:tm2 /tm2
+RUN mkdir -p /srv \
+    && chown -R tm2:tm2 /srv
 RUN chmod +x /start.sh \
     && chown tm2:tm2 /start.sh
 
