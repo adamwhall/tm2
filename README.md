@@ -1,6 +1,6 @@
 # tm2
 TrackMania 2 Docker Container
-Version 1
+Version 1.2
 
 ALL information is around on the net, if you just look :)
 
