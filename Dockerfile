@@ -33,7 +33,7 @@ RUN chmod +x /start.sh \
     && chown tm2:tm2 /start.sh
 
 # Expose a volume so that TM2 server data is persistent
-VOLUME /srv
+VOLUME /srv/docker/data/
 # TM2 port
 EXPOSE 2350 3450
 
