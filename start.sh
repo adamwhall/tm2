@@ -32,4 +32,4 @@ then
     echo "./ManiaPlanetServer /nodaemon /dedicated_cfg=dedicated_cfg.txt /title=TMStadium@nadeo /game_settings=MatchSettings/TMStadiumA.txt" > /RunSrvTM.sh
 fi
 
-./srv/RunSrvTM.sh
+./RunSrvTM.sh
