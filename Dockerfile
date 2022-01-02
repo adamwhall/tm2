@@ -1,4 +1,4 @@
-#THIS IS TESTING V3
+#THIS IS TESTING V3 20220102
 FROM debian:latest
 
 LABEL maintainer="AdamWHall" \
