@@ -27,8 +27,7 @@ then
     cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg.txt
 fi
 
-#echo "./ManiaPlanetServer /nodaemon /dedicated_cfg=dedicated_cfg.txt /title=TMStadium@nadeo /game_settings=MatchSettings/TMStadiumA.txt" > /RunSrvTM.sh
-#echo chmod u+r+x RunSrvTM.sh
-#./RunSrvTM.sh
+echo "./ManiaPlanetServer /nodaemon /dedicated_cfg=dedicated_cfg.txt /title=TMStadium@nadeo /game_settings=MatchSettings/TMStadiumA.txt" > /RunSrvTM.sh
+./RunSrvTM.sh
 
-./srv/ManiaPlanetServer /nodaemon /dedicated_cfg=dedicated_cfg.txt /title=TMStadium@nadeo /game_settings=MatchSettings/TMStadiumA.txt
+#./srv/ManiaPlanetServer /nodaemon /dedicated_cfg=dedicated_cfg.txt /title=TMStadium@nadeo /game_settings=MatchSettings/TMStadiumA.txt

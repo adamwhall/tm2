@@ -25,12 +25,15 @@ RUN useradd -m -d /srv tm2
 
 # Add Entrypoint script
 ADD start.sh /start.sh
+ADD RunSrvTM.sh /RunSrvTM.sh
 
 # Create needed data dir and set the dedicated TM2 user as owner
 RUN mkdir -p /srv \
     && chown -R tm2:tm2 /srv
 RUN chmod +x /start.sh \
     && chown tm2:tm2 /start.sh
+RUN chmod +x /RunSrvTM.sh \
+    && chown tm2:tm2 /RunSrvTM.sh
 
 # Expose a volume so that TM2 server data is persistent
 VOLUME /srv/docker/data/
