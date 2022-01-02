@@ -7,6 +7,7 @@
 if [ ! -f /srv/ManiaplanetServer_Latest.zip ]
 then
     wget "http://192.168.10.4:8888/ManiaplanetServer_Latest.zip" -O /srv/ManiaplanetServer_Latest.zip
+    #wget "http://files.v04.maniaplanet.com/server/ManiaplanetServer_Latest.zip" -O /srv/ManiaplanetServer_Latest.zip
 fi
 
 if [ -f /srv/ManiaplanetServer_Latest.zip ]
@@ -23,7 +24,7 @@ fi
 
 if [ ! -f /srv/UserData/Config/dedicated_cfg.txt ]
 then
-    cp /tm2srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg.txt
+    cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg.txt
 fi
 
 if [ -f /srv/RunSrvTM.sh ]
