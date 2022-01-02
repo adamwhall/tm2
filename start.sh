@@ -6,7 +6,7 @@
 
 if [ ! -f /srv/ManiaplanetServer_Latest.zip ]
 then
-    wget "http://192.168.10.4/ManiaplanetServer_Latest.zip" -O /srv/ManiaplanetServer_Latest.zip
+    wget "http://192.168.10.4:8888/ManiaplanetServer_Latest.zip" -O /srv/ManiaplanetServer_Latest.zip
 fi
 
 if [ -f /srv/ManiaplanetServer_Latest.zip ]
