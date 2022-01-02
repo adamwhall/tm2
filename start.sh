@@ -6,8 +6,7 @@
 
 if [ ! -f /srv/ManiaplanetServer_Latest.zip ]
 then
-    wget "http://192.168.10.4:8888/ManiaplanetServer_Latest.zip" -O /srv/ManiaplanetServer_Latest.zip
-    #wget "http://files.v04.maniaplanet.com/server/ManiaplanetServer_Latest.zip" -O /srv/ManiaplanetServer_Latest.zip
+    wget "http://files.v04.maniaplanet.com/server/ManiaplanetServer_Latest.zip" -O /srv/ManiaplanetServer_Latest.zip
 fi
 
 if [ -f /srv/ManiaplanetServer_Latest.zip ]
@@ -27,7 +26,7 @@ then
     cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg.txt
 fi
 
-echo "./srv/ManiaPlanetServer /nodaemon /dedicated_cfg=dedicated_cfg.txt /title=TMStadium@nadeo /game_settings=MatchSettings/TMStadiumA.txt" > /RunSrvTM.sh
+echo "./srv/ManiaPlanetServer /nodaemon /internet /dedicated_cfg=dedicated_cfg.txt /game_settings=MatchSettings/Settings.txt" > /RunSrvTM.sh
 ./RunSrvTM.sh
 
-#./srv/ManiaPlanetServer /nodaemon /dedicated_cfg=dedicated_cfg.txt /title=TMStadium@nadeo /game_settings=MatchSettings/TMStadiumA.txt
+MatchSettings\TMStadiumA.txt
