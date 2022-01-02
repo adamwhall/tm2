@@ -36,7 +36,8 @@ RUN chmod +x /RunSrvTM.sh \
     && chown tm2:tm2 /RunSrvTM.sh
 
 # Expose a volume so that TM2 server data is persistent
-VOLUME /srv/docker/UserData/Config/
+# VOLUME /srv/docker/UserData/Config/
+-v /srv/docker/config/tm2/Userdata/Config/:/srv/UserData/Config/ \
 # TM2 port
 EXPOSE 2350 3450
 
