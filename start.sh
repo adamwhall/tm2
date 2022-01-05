@@ -26,5 +26,5 @@ then
     cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg.txt
 fi
 
-./srv/ManiaPlanetServer /nodaemon /internet /dedicated_cfg=dedicated_cfg.txt /game_settings=MatchSettings/Settings.txt /Title=TMStadium@nadeo
+./srv/ManiaPlanetServer /nodaemon /internet /lan /dedicated_cfg=dedicated_cfg.txt /game_settings=MatchSettings/Settings.txt /Title=TMStadium@nadeo
 #echo "./srv/ManiaPlanetServer /nodaemon /internet /dedicated_cfg=dedicated_cfg.txt /game_settings=MatchSettings/Settings.txt /Title=TMStadium@nadeo" > /RunSrvTM.sh
