@@ -31,9 +31,9 @@ RUN mkdir -p /srv \
     && chown -R tm2:tm2 /srv
 RUN chmod +x /start.sh \
     && chown tm2:tm2 /start.sh
-# RUN touch /RunSrvTM.sh
-# RUN chmod +x /RunSrvTM.sh \
-#    && chown tm2:tm2 /RunSrvTM.sh
+RUN touch /srv/RunSrvTM.sh
+RUN chmod +x /srv/RunSrvTM.sh \
+    && chown tm2:tm2 /srv/RunSrvTM.sh
 
 # Expose a volume so that TM2 server data is persistent
 VOLUME /srv/
