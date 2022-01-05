@@ -1,7 +1,7 @@
 #!/bin/bash
 # -----------------------------------------------------------------------------
 # TM2 /start.sh script
-# tm2:latest v3.1:20220102
+# tm2:latest v3.1:20220105
 # -----------------------------------------------------------------------------
 
 if [ ! -f /srv/ManiaplanetServer_Latest.zip ]
@@ -26,8 +26,4 @@ then
     cp /srv/UserData/Config/dedicated_cfg.default.txt /srv/UserData/Config/dedicated_cfg.txt
 fi
 
-#./srv/ManiaPlanetServer /nodaemon /internet /dedicated_cfg=dedicated_cfg.txt /game_settings=MatchSettings/Settings.txt /Title=TMStadium@nadeo
-
-echo "./srv/ManiaPlanetServer /nodaemon /internet /dedicated_cfg=dedicated_cfg.txt /game_settings=MatchSettings/Settings.txt /Title=TMStadium@nadeo" > /RunSrvTM.sh
-
-./srv/RunSrvTM.sh
+./srv/ManiaPlanetServer /nodaemon /internet /dedicated_cfg=dedicated_cfg.txt /game_settings=MatchSettings/Settings.txt /Title=TMStadium@nadeo

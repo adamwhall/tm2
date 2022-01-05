@@ -1,4 +1,4 @@
-#THIS IS TESTING V3 20220102
+#V3 20220105
 FROM debian:latest
 
 LABEL maintainer="AdamWHall" \
@@ -6,7 +6,7 @@ LABEL maintainer="AdamWHall" \
       version="1.0"
 
 #set env variable
-#ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND noninteractive
 
 # Install packages to container
 RUN apt update -y \
@@ -31,9 +31,6 @@ RUN mkdir -p /srv \
     && chown -R tm2:tm2 /srv
 RUN chmod +x /start.sh \
     && chown tm2:tm2 /start.sh
-RUN touch /srv/RunSrvTM.sh
-RUN chmod +x /srv/RunSrvTM.sh \
-    && chown tm2:tm2 /srv/RunSrvTM.sh
 
 # Expose a volume so that TM2 server data is persistent
 VOLUME /srv/
