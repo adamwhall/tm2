@@ -6,7 +6,7 @@ LABEL maintainer="AdamWHall" \
       version="1.0"
 
 #set env variable
-ENV DEBIAN_FRONTEND noninteractive
+# ENV DEBIAN_FRONTEND noninteractive
 
 # Install packages to container
 RUN apt update -y \
