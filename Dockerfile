@@ -16,6 +16,7 @@ RUN apt update -y \
         nano \
         unzip \
         sudo \
+        htop \
     && apt-get clean autoclean \
     && apt-get autoremove -y \
     && rm -rf /var/lib/apt/lists/*
@@ -35,7 +36,7 @@ RUN chmod +x /start.sh \
 # Expose a volume so that TM2 server data is persistent
 VOLUME /srv/
 # TM2 port
-EXPOSE 2350 3450
+EXPOSE 2350 2351 3450 3451
 
 #switch to the dedicated TM2 user for entrypoint execution
 USER tm2
